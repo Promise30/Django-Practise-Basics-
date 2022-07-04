@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 style="color: lawngreen;">INFORMATION ABOUT US!</h2>
+<p>
+    {{ text }}
+</p>
+<p>
+    {{ info }}
+</p>
+<ul>
+    {% for item in product_types %}
+        <li> {{ item|title }}</li>
+    {% endfor %}
+</ul>
+<p style="color: red;">Visit our contact page for more information on how to contact us.</p>
+{% endblock %}
