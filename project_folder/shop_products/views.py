@@ -9,4 +9,4 @@ def about_view(request, *args, **kwargs):
         "info": "Prices are very decent and made affordable for anyone to purchase our products. Some of which include: ",
         "product_types": ['Perfume: $299.99', 'Balenciaga: $349.99', 'Soft-drinks: $119.99', 'Pasteries: $99.99', 'Chocolates: $499.99']
     }
-    return render(request, 'about.html', context)
+    return render(request, 'about.html', my_context)
