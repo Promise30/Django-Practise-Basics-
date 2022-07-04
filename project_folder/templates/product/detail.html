@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 style="color: limegreen;">Information about a single product is displayed below: </h2>
+<h3>{{ object.product_name }}</h3>
+<p><span>Price: </span>{{ object.price }}</p>
+<p><span>Description: </span>{{ object.description }}</p>
+<p><span>Years of Guarantee: </span>{% if object.year_guarantee <= 2 %}{{ object.year_guarantee }}{% else %}This product has a longer guarantee period of time{% endif %}</p>
+<p><span>Product Availability: </span>{% if object.availability == True %}{{ object.availability }}{% else %}This product is currently unavailable.{% endif %}</p>
+<p><span>Product Publication Date: </span>{{ object.published }}</p>
+{% endblock %}
+
